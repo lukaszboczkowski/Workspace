@@ -10,7 +10,7 @@ public class Main {
 		JFrame obj = new JFrame();
 		Plansza plansza = new Plansza();
 		
-		obj.setBounds(10, 01, 905, 700);
+		obj.setBounds(10, 01, 910, 710);
 		obj.setBackground(Color.DARK_GRAY);
 		obj.setResizable(false);
 		obj.setVisible(true);

@@ -174,7 +174,7 @@ public class Plansza extends JPanel implements KeyListener, ActionListener{
 				else {
 					wazX[r] = wazX[r-1];
 				}
-				if(wazX[r]>25) {
+				if(wazX[r]<25) {
 					wazX[r]= 850;
 				}
 			}
@@ -186,7 +186,7 @@ public class Plansza extends JPanel implements KeyListener, ActionListener{
 			}
 			for(int r= dlwaz; r>=0; r--) {
 				if(r==0) {
-					wazY[r] = wazY[r]+25;
+					wazY[r] = wazY[r]-25;
 				}
 				else {
 					wazY[r] = wazY[r-1];
@@ -208,8 +208,8 @@ public class Plansza extends JPanel implements KeyListener, ActionListener{
 				else {
 					wazY[r] = wazY[r-1];
 				}
-				if(wazX[r]>625) {
-					wazX[r]= 75;
+				if(wazY[r]>625) {
+					wazY[r]= 75;
 				}
 			}
 			repaint();	
